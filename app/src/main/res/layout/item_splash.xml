@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/colorPrimary"
+	tools:context=".SplashScreen">
+
+	<ImageView
+		android:id="@+id/image"
+		android:layout_width="256dp"
+		android:layout_height="256dp"
+		android:layout_marginTop="64dp"
+		android:scaleType="fitCenter"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		tools:srcCompat="@drawable/splash_1" />
+
+	<TextView
+		android:id="@+id/title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:gravity="center"
+		android:padding="8dp"
+		android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/image"
+		tools:text="Quick Search" />
+
+	<TextView
+		android:id="@+id/subtitle"
+		style="@style/TextAppearance.AppCompat.Title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:gravity="center"
+		android:padding="8dp"
+		android:textAppearance="@style/TextAppearance.AppCompat.Large"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/title"
+		tools:text="See your location to start exploring restaurant around you" />
+
+	<Button
+		style="@style/Widget.AppCompat.Button.Colored"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_margin="8dp"
+		android:padding="16dp"
+		android:text="Login"
+		android:textAppearance="@style/TextAppearance.AppCompat.Title"
+		app:layout_constraintBottom_toBottomOf="@+id/progress"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/subtitle" />
+
+
+	<LinearLayout
+		android:id="@+id/progress"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="32dp"
+		android:orientation="horizontal"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent">
+
+		<View
+			android:layout_width="8dp"
+			android:layout_height="8dp"
+			android:layout_margin="4dp"
+			android:background="@android:color/white" />
+
+		<View
+			android:layout_width="8dp"
+			android:layout_height="8dp"
+			android:layout_margin="4dp"
+			android:background="@android:color/white" />
+
+		<View
+			android:layout_width="8dp"
+			android:layout_height="8dp"
+			android:layout_margin="4dp"
+			android:background="@android:color/white" />
+
+		<View
+			android:layout_width="8dp"
+			android:layout_height="8dp"
+			android:layout_margin="4dp"
+			android:background="@android:color/white" />
+	</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
